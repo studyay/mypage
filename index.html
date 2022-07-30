@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="최아영 - 프로필 링크">
+    <meta property="og:description" content="16살 대학생을 소개합니다!">
+    <meta property="og:image" content="ay.png">
+    <title>최아영 - 프로필 링크</title>
+    <style>
+        @font-face {
+            font-family: 'S-CoreDream-3Light';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        .wfont {
+            font-family: 'S-CoreDream-3Light';
+        }
+        body {
+            background-color: #1B4979;
+        }
+        .myImage {
+            width: 100px;
+            height: 100px;
+
+            border-radius: 100%;
+            
+            border: 2px solid white;
+
+            background-image: url('ay.png');
+            background-position: center;
+            background-size: cover;
+        }
+        .myName {
+            color: white;
+            font-size: 20px;
+
+            margin-top: 30px;
+            margin-bottom: 10;
+        }
+        .myAbout {
+            color: white;
+            font-size: 14px;
+
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        .profile {
+            width: 300px;
+            margin: 30px auto 0px auto;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; /*이 4줄은 중앙 정렬 코드*/
+        }
+        .profile > a {
+            width: 300px;
+            height: 50px;
+            background-color: white;
+            border-radius: 8px; /*버튼 상자*/
+
+            margin-bottom: 10px; /*버튼 간격*/
+
+            font-size: 15px;
+            font-weight: bold;
+            color: #1B4979;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; /*중앙정렬*/
+            
+            text-decoration: none; /*링크의 밑줄 삭제*/
+
+            box-shadow: 3px 3px 5px 0px black; /*그림자가 오른쪽 밑으로 얼마나 이동할지(3px 3px), 그림자 꼬리 길이(5px), 선명도(0px)*/
+        }
+        .profile > a:hover {
+            background-color: #D1DBE4;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body class="wfont">
+    <div class="profile">
+        <div class="myImage"></div>
+        <h1 class="myName">최아영</h1>
+        <p class="myAbout">16살 대학생</p>
+        <a target="_blank" href="https://homeschool2study.wixsite.com/ayeong">ay study cafe 홈페이지</a>
+        <a target="_blank" href="https://blog.naver.com/study-1stclass">공부알아 블로그</a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCB2FZvDkhAhE3BhlZ1pp-Qg">공부알아 유튜브</a>
+    </div>
+</body>
+</html>
