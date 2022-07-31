@@ -15,11 +15,18 @@
             font-weight: normal;
             font-style: normal;
         }
+        @font-face {
+            font-family: 'GangwonEduPowerExtraBoldA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
         .wfont {
             font-family: 'S-CoreDream-3Light';
         }
         body {
             background-color: #1B4979;
+            margin-top: 100px;
         }
         .myImage {
             width: 100px;
@@ -35,14 +42,15 @@
         }
         .myName {
             color: white;
-            font-size: 20px;
+            font-family: 'GangwonEduPowerExtraBoldA';
+            font-size: 40px;
 
             margin-top: 30px;
-            margin-bottom: 10;
+            margin-bottom: 0;
         }
         .myAbout {
             color: white;
-            font-size: 14px;
+            font-size: 20px;
 
             margin-top: 0px;
             margin-bottom: 30px;
@@ -75,11 +83,11 @@
             
             text-decoration: none; /*링크의 밑줄 삭제*/
 
-            box-shadow: 3px 3px 5px 0px black; /*그림자가 오른쪽 밑으로 얼마나 이동할지(3px 3px), 그림자 꼬리 길이(5px), 선명도(0px)*/
+            /*box-shadow: 3px 3px 5px 0px black; /*그림자가 오른쪽 밑으로 얼마나 이동할지(3px 3px), 그림자 꼬리 길이(5px), 선명도(0px)*/
         }
         .profile > a:hover {
             background-color: #D1DBE4;
-            font-size: 16px;
+            /*font-size: 16px;*/
         }
     </style>
 </head>
