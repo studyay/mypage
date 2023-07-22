@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="최아영의 프로필">
@@ -10,36 +11,96 @@
     <title>최아영의 프로필</title>
     <style>
         @font-face {
-            font-family: 'S-CoreDream-3Light';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
             font-family: 'GangwonEduPowerExtraBoldA';
             src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
             font-weight: normal;
             font-style: normal;
         }
-        .wfont {
+
+        @font-face {
             font-family: 'S-CoreDream-3Light';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
         }
+
+        @font-face {
+            font-family: 'SUIT01';
+            font-weight: 100;
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Thin.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'SUIT02';
+            font-weight: 200;
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraLight.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'SUIT03';
+            font-weight: 300;
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Light.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'SUIT04';
+            font-weight: 400;
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'SUIT05';
+            font-weight: 500;
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'SUIT06';
+            font-weight: 600;
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-SemiBold.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'SUIT07';
+            font-weight: 700;
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'SUIT08';
+            font-weight: 800;
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraBold.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'SUIT09';
+            font-weight: 900;
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Heavy.woff2') format('woff2');
+        }
+
+        .wfont {
+            font-family: 'SUIT04';
+            /*letter-spacing: 1px;*/
+        }
+
         body {
             background-color: #1B4979;
             margin-top: 100px;
         }
+
         .myImage {
             width: 100px;
             height: 100px;
 
             border-radius: 100%;
-            
+
             border: 2px solid white;
 
             background-image: url('ay.png');
             background-position: center;
             background-size: cover;
         }
+
         .myName {
             color: white;
             font-family: 'GangwonEduPowerExtraBoldA';
@@ -48,6 +109,7 @@
             margin-top: 30px;
             margin-bottom: 0;
         }
+
         .myAbout {
             color: white;
             font-size: 20px;
@@ -55,22 +117,28 @@
             margin-top: 0px;
             margin-bottom: 30px;
         }
+
         .profile {
             width: 300px;
             margin: 30px auto 0px auto;
-            
+
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center; /*이 4줄은 중앙 정렬 코드*/
+            align-items: center;
+            /*이 4줄은 중앙 정렬 코드*/
         }
-        .profile > a {
-            width: 300px;
+
+        .profile>a {
+            width: 250px;
             height: 50px;
             background-color: white;
-            border-radius: 8px; /*버튼 상자*/
+            border-radius: 15px;
+            /*버튼 상자*/
 
-            margin-bottom: 10px; /*버튼 간격*/
+            margin-bottom: 10px;
+            padding-left: 30px;
+            /*버튼 간격*/
 
             font-size: 15px;
             font-weight: bold;
@@ -79,28 +147,104 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center; /*중앙정렬*/
-            
-            text-decoration: none; /*링크의 밑줄 삭제*/
+            align-items: baseline;
+            /*중앙정렬*/
+
+            text-decoration: none;
+            /*링크의 밑줄 삭제*/
 
             /*box-shadow: 3px 3px 5px 0px black; /*그림자가 오른쪽 밑으로 얼마나 이동할지(3px 3px), 그림자 꼬리 길이(5px), 선명도(0px)*/
+
+            transition: transform 1.0s;
         }
-        .profile > a:hover {
-            background-color: #D1DBE4;
+
+        .profile>a:hover {
+            /*background-color: #D1DBE4;*/
+            color: white;
+            background-color: #071d35;
             /*font-size: 16px;*/
+
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            /* 마우스 오버 시 그림자 추가 */
+        }
+
+        .profile>div>a {
+            width: 250px;
+            height: 50px;
+            background-color: white;
+            border-radius: 15px;
+            /*버튼 상자*/
+
+            margin-bottom: 10px;
+            padding-left: 30px;
+            /*버튼 간격*/
+
+            font-size: 15px;
+            font-weight: bold;
+            color: #1B4979;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+            /*중앙정렬*/
+
+            text-decoration: none;
+            /*링크의 밑줄 삭제*/
+
+            /*box-shadow: 3px 3px 5px 0px black; /*그림자가 오른쪽 밑으로 얼마나 이동할지(3px 3px), 그림자 꼬리 길이(5px), 선명도(0px)*/
+
+            transition: transform 1.0s;
+        }
+
+        .profile>div>a:hover {
+            /*background-color: #D1DBE4;*/
+            color: white;
+            background-color: #071d35;
+            /*font-size: 16px;*/
+
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            /* 마우스 오버 시 그림자 추가 */
         }
     </style>
 </head>
-<!--body class="wfont"-->
-<body>
+
+<body class="wfont">
     <div class="profile">
         <div class="myImage"></div>
         <h1 class="myName">최아영</h1>
-        <p class="myAbout">16살 대학생</p>
-        <a target="_blank" href="https://ayeongde.wixsite.com/profile" style="letter-spacing: 0.5px">Homepage</a>
-        <a target="_blank" href="https://blog.naver.com/study-1stclass" style="letter-spacing: 0.5px">Blog</a>
-        <a target="_blank" href="https://www.youtube.com/channel/UCB2FZvDkhAhE3BhlZ1pp-Qg" style="letter-spacing: 0.5px">Youtube</a>
-        <a target="_blank" href="https://www.instagram.com/ayeong_study/" style="letter-spacing: 0.5px">Instagram</a>
+        <p class="myAbout" style="font-family: 'SUIT01';">16살 대학생</p>
+
+        <a target="_blank" href="https://ayeongde.wixsite.com/profile">☕️ DE:AYEONG 홈페이지</a>
+        <a target="_blank" href="https://blog.naver.com/study-1stclass">📑 BLOG 블로그</a>
+        <a target="_blank" href="https://de-ayeong.tistory.com/">📝 TISTORY 티스토리</a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCB2FZvDkhAhE3BhlZ1pp-Qg">📷 YOUTUBE 유튜브</a>
+        <a target="_blank" href="https://www.instagram.com/ayeong_study/">📄 INSTAGRAM 인스타그램</a>
+
+        <div id="openLinks" style="display: none;">
+            <!--<div style="font-size: 1px; color: white; justify-content: center; margin-bottom: 10px;">●●●</div>-->
+            <a target="_blank" href="https://valuechainjunior.wixsite.com/value-chain-junior">😎 VALUE CHAIN JUNIOR</a>
+            <a target="_blank" href="https://www.instagram.com/valuechain_junior/">🙋🏻 VCJ INSTAGRAM</a>
+            <a target="_blank" href="https://cafe.naver.com/visionschool4you">📔 VC COACHING CENTER</a>
+            <a target="_blank" href="https://homeschool2study.wixsite.com/ayeong">✍️ AY STUDY CAFE</a>
+        </div>
+        <div onclick="readMore()" style="color: white;">
+            <div id="openBtn" onclick='openlink()'>▼</div>
+        </div>
     </div>
+
+    <script>
+        function openlink() {
+            const subs = document.getElementById('openBtn');
+            subs.innerText = ''
+        }
+
+        function readMore() {
+            document.getElementById("openLinks").style.display = "block";
+        }
+    </script>
 </body>
+
 </html>
