@@ -224,11 +224,10 @@
         <a target="_blank" href="https://de-ayeong.tistory.com/">📝 TISTORY 티스토리</a>
         <a target="_blank" href="https://github.com/studyay">💻 GITHUB 깃허브</a>
 
-        <div onclick="readMore()" style="color: white;">
-            <div id="openBtn" onclick='openlink()'>▼</div>
-        </div>
+        <div id="openBtn" onclick='openlink()' style="color: white;">▼</div>
         
         <div id="openLinks" style="display: none;">
+            <!--<div style="font-size: 1px; color: white; justify-content: center; margin-bottom: 10px;">●●●</div>-->
             <div style="margin-top: 10px;"></div>
             <a target="_blank" href="https://valuechainjunior.wixsite.com/value-chain-junior">😎 VALUE CHAIN JUNIOR</a>
             <a target="_blank" href="https://www.instagram.com/valuechain_junior/">🙋🏻 VCJ INSTAGRAM</a>
@@ -243,9 +242,6 @@
         function openlink() {
             const subs = document.getElementById('openBtn');
             subs.innerText = '|'
-        }
-
-        function readMore() {
             document.getElementById("openLinks").style.display = "block";
         }
     </script>
